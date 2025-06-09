@@ -25,12 +25,6 @@ fun String.execute(currentWorkingDir: File = file("./")): String {
 val gitCommitCount = "git rev-list HEAD --count".execute().toInt()
 val gitCommitHash = "git rev-parse --verify --short HEAD".execute()
 
-allprojects {
-    repositories {
-        maven { url 'https://jitpack.io' }
-    }
-}
-
 android {
     namespace = "com.example.c001apk.compose"
     compileSdk = 35
@@ -201,15 +195,15 @@ dependencies {
 
     
 
-implementation "com.github.mikaelzero.mojito:mojito:1.8.7"
+    implementation("com.github.mikaelzero.mojito:mojito:1.8.7")
 //support long image and gif with Sketch
-implementation "com.github.mikaelzero.mojito:SketchImageViewLoader:1.8.7"
+    implementation("com.github.mikaelzero.mojito:SketchImageViewLoader:1.8.7")
 
 //load with coil
-implementation "com.github.mikaelzero.mojito:coilimageloader:1.8.7"
+    implementation("com.github.mikaelzero.mojito:coilimageloader:1.8.7")
 //load with glide
-implementation "com.github.mikaelzero.mojito:GlideImageLoader:1.8.7"
+    implementation("com.github.mikaelzero.mojito:GlideImageLoader:1.8.7")
 //load with fresco
-implementation "com.github.mikaelzero.mojito:FrescoImageLoader:1.8.7"}
-
+    implementation("com.github.mikaelzero.mojito:FrescoImageLoader:1.8.7")
 }
+
