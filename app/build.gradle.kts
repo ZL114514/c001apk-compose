@@ -193,8 +193,8 @@ dependencies {
     implementation(libs.oss.android.sdk)
     implementation(libs.material.kolor)
 
-    implementation(project(":mojito"))
-    implementation(project(":SketchImageViewLoader"))
-    implementation(project(":coilimageLoader"))
-
+    implementation("org.mockito.kotlin:mockito-kotlin:5.4.0")
+    implementation("io.github.panpf.sketch4:sketch-compose:4.1.0")
+    implementation("io.coil-kt.coil3:coil-compose:3.2.0")
+    implementation("io.coil-kt.coil3:coil-network-okhttp:3.2.0")
 }
