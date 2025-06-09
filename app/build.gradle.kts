@@ -194,16 +194,20 @@ dependencies {
     implementation(libs.material.kolor)
 
     
+    implementation("com.github.tulip799837434.mojito:mojito:1.0.5")
+    implementation("com.github.tulip799837434.mojito:SketchImageViewLoader:1.0.5")
+    implementation("com.github.tulip799837434.mojito:GlideImageLoader:1.0.5")
 
-    implementation("com.github.mikaelzero.mojito:mojito:1.8.7")
+
+    //implementation("com.github.mikaelzero.mojito:mojito:1.8.7")
 //support long image and gif with Sketch
-    implementation("com.github.mikaelzero.mojito:SketchImageViewLoader:1.8.7")
+    //implementation("com.github.mikaelzero.mojito:SketchImageViewLoader:1.8.7")
 
 //load with coil
-    implementation("com.github.mikaelzero.mojito:coilimageloader:1.8.7")
+    //implementation("com.github.mikaelzero.mojito:coilimageloader:1.8.7")
 //load with glide
-    implementation("com.github.mikaelzero.mojito:GlideImageLoader:1.8.7")
+    //implementation("com.github.mikaelzero.mojito:GlideImageLoader:1.8.7")
 //load with fresco
-    implementation("com.github.mikaelzero.mojito:FrescoImageLoader:1.8.7")
+    //implementation("com.github.mikaelzero.mojito:FrescoImageLoader:1.8.7")
 }
 
