@@ -193,8 +193,19 @@ dependencies {
     implementation(libs.oss.android.sdk)
     implementation(libs.material.kolor)
 
-    implementation("org.mockito.kotlin:mockito-kotlin:5.4.0")
-    implementation("io.github.panpf.sketch4:sketch-compose:4.1.0")
-    implementation("io.coil-kt.coil3:coil-compose:3.2.0")
-    implementation("io.coil-kt.coil3:coil-network-okhttp:3.2.0")
+    allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
 }
+
+implementation "com.github.mikaelzero.mojito:mojito:1.8.7"
+//support long image and gif with Sketch
+implementation "com.github.mikaelzero.mojito:SketchImageViewLoader:1.8.7"
+
+//load with coil
+implementation "com.github.mikaelzero.mojito:coilimageloader:1.8.7"
+//load with glide
+implementation "com.github.mikaelzero.mojito:GlideImageLoader:1.8.7"
+//load with fresco
+implementation "com.github.mikaelzero.mojito:FrescoImageLoader:1.8.7"}
