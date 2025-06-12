@@ -16,6 +16,3 @@ local.properties
 *.log
 .idea
 .kotlin
-/coilimageloader
-/mojito
-/SketchImageViewLoader
